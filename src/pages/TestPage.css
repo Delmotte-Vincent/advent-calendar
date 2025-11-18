@@ -1,0 +1,21 @@
+.test-page {
+    background-color: blue;
+}
+
+.flex-example {
+    width: 300px;
+    height: 400px;
+    background-color: plum;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.item {
+    min-width: 50px;
+    height: 50px;
+    background-color: grey;
+}
