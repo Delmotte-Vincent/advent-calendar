@@ -29,7 +29,7 @@ export const Page5 = () => {
         const hours = String(now.getHours()).padStart(2, '0');
         const minutes = String(now.getMinutes()).padStart(2, '0');
         const hhmm = hours + minutes;
-        console.log(now);
+
         if (answer === hhmm) {
             console.log('Youpi');
             setCondition(true);
@@ -39,7 +39,7 @@ export const Page5 = () => {
     };
 
     const handleRetour = () => {
-        navigate(``);
+        navigate('/');
     };
 
     console.log(dayId);
