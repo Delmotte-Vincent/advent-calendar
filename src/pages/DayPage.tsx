@@ -25,7 +25,7 @@ export const DayPage = () => {
         const value = event.target.value;
         setAnswer(value);
         console.log(answer);
-        if (answer === answers[`day${dayId}`]) {
+        if (answer.toLowerCase() === answers[`day${dayId}`]) {
             console.log('Youpi');
             setCondition(true);
         } else {

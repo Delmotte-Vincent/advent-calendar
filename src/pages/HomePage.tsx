@@ -3,7 +3,7 @@ import './HomePage.css';
 
 const days_row1 = ['1', '2', '3', '4', '5', '6', '7', '8'];
 const days_row2 = ['9', '10', '11', '12', '13', '14', '15', '16'];
-const days_row3 = ['17', '18', '19', '20', '21', '22', '23', '24'];
+const days_row3 = ['17', '18', '19', '20', '21', '22', '23'];
 
 export const HomePage = () => {
     const navigate = useNavigate();

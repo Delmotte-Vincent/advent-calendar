@@ -5,20 +5,23 @@
 }
 
 .background-section {
-    background-image: url('..//assets/Valise.jpg');
+    background-image: url('..//assets/Valise.jpeg');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 70%;
-    padding-bottom: 400px;
-    /* margin-bottom: 100px; */
+    width: 1200px;
+    aspect-ratio: 1.514;
+    background-size: contain;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: top;
 }
 
 .button-grid {
     display: flex;
-    padding: 120px;
-    margin-top: 200px;
     flex-direction: column;
     align-items: center;
+    padding-top: 140px;
 }
 
 .header {
