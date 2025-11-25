@@ -1,7 +1,8 @@
 // src/router/router.tsx
 import { createBrowserRouter } from 'react-router-dom';
-import { ChallengePage } from '../pages/ChallengePage';
+import { DayPage } from '../pages/DayPage';
 import { HomePage } from '../pages/HomePage';
+import { Page5 } from '../pages/Page5';
 import { TestPage } from '../pages/TestPage';
 
 export const router = createBrowserRouter([
@@ -15,6 +16,14 @@ export const router = createBrowserRouter([
     },
     {
         path: '/day/:id',
-        element: <ChallengePage />
+        element: <DayPage />
+    },
+    {
+        path: '/day/8',
+        element: <div>Test 8</div>
+    },
+    {
+        path: '/day/5',
+        element: <Page5 />
     }
 ]);

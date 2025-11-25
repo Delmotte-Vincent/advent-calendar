@@ -1,0 +1,58 @@
+.day-page {
+    background-image: url('..//assets/fond_day.jpg');
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    flex-direction: column;
+    gap: 4px;
+    text-align: center;
+}
+
+.text {
+    font-size: 24px;
+    margin: 0px 0;
+}
+.buttonCheck {
+    background-color: #4caf50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 5px 1px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.buttonCheck:hover {
+    background-color: #45a049;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bravo {
+    font-size: 30px;
+    color: green;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.box_code {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    margin-top: 5px;
+}

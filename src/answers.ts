@@ -1,7 +1,25 @@
-export const awsers = {
-    day1: '42',
-    day2: 'Bonjour le monde',
-    day3: 'React est super',
-    day4: 'TypeScript',
-    day5: 'Advent Calendar'
+export const answers = {
+    day1: '131639',
+    day2: 'suit',
+    day3: 'imaginaire',
+    day4: 'botanique',
+    day5: '26',
+    day6: 'symbolisme',
+    day7: 'source',
+    day8: '1244160',
+    day9: 'Cuire',
+    day10: 'HHmm',
+    day11: '9171020',
+    day12: '91872',
+    day13: '3741',
+    day14: '6237',
+    day15: 'sourisseau',
+    day16: '3167',
+    day17: 'melatonine',
+    day18: 'protection',
+    day19: '5236481',
+    day20: '2316547',
+    day21: '224',
+    day22: 'jingle bells',
+    day23: 'chalice'
 };

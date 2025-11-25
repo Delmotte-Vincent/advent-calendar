@@ -1,13 +1,16 @@
 import { useState } from 'react';
-import { awsers } from '../answers';
+import { useNavigate } from 'react-router-dom';
+import { answers } from '../answers';
 import './TestPage.css';
+
+const days = ['1', '2', '3', '4', '5'];
 
 export const TestPage = () => {
     const [counter, setCounter] = useState(0);
     const [answer, setAnswer] = useState('');
     const [condition, setCondition] = useState(false);
 
-    const days = ['1', '2', '3', '4', '5'];
+    const navigate = useNavigate();
 
     const handleIncrement = () => {
         setCounter(counter + 1);
@@ -20,7 +23,7 @@ export const TestPage = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        if (answer === awsers.day1) {
+        if (answer === answers.day1) {
             console.log('Youpi');
             setCondition(true);
         } else {
@@ -30,6 +33,7 @@ export const TestPage = () => {
 
     const handleClick = (day) => {
         console.log(`Day ${day}`);
+        navigate(`/day/${day}`);
     };
 
     return (
