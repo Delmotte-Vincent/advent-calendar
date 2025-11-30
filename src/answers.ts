@@ -6,7 +6,7 @@ export const answers = {
     day5: '26',
     day6: 'symbolisme',
     day8: '1244160',
-    day9: 'Cuire',
+    day9: 'cuire',
     day11: '9171020',
     day12: '91872',
     day13: '3741',
