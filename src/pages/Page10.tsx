@@ -1,9 +1,8 @@
 import { useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { codes } from '../box_codes';
-import './Page5.css';
+import './DayPage.css';
 
-export const Page5 = () => {
+export const Page10 = () => {
     const location = useLocation();
     const navigate = useNavigate();
 
@@ -29,8 +28,10 @@ export const Page5 = () => {
         const hours = String(now.getHours()).padStart(2, '0');
         const minutes = String(now.getMinutes()).padStart(2, '0');
         const hhmm = hours + minutes;
+        const hhhmm = hours + 'h' + minutes;
+        const hhHmm = hours + 'H' + minutes;
 
-        if (answer === hhmm) {
+        if (answer === hhmm || answer === hhhmm || answer === hhHmm) {
             console.log('Youpi');
             setCondition(true);
         } else {
@@ -49,7 +50,7 @@ export const Page5 = () => {
                 <header style={{ textAlign: 'center', fontSize: '24px' }}>
                     <h1> Jour {dayId}</h1>
                 </header>
-                <p className="text"> Entrez votre réponse </p>
+                <p className="text"> Entrez votre réponse</p>
                 <div className="form-container">
                     <form onSubmit={handleSubmit} className="form-container">
                         <input type="text" className="text" onChange={handleChangeAnswer} />
@@ -66,14 +67,13 @@ export const Page5 = () => {
                             Vous avez trouvé la bonne réponse
                             <br /> Vous pouvez ouvrir la boite magique :
                         </p>
-                        <p className="box_code">{codes[`day${dayId}`]}</p>
+                        <p className="box_code"> V4H9</p>
                     </>
                 ) : firstSubmit ? (
                     <p className="text">Oups, ce n'est pas la bonne réponse!</p>
                 ) : null}
+                <button onClick={handleRetour}>Retour</button>
             </div>
-
-            <button onClick={handleRetour}>Retour</button>
         </div>
     );
 };

@@ -1,9 +1,9 @@
-// src/router/router.tsx
 import { createBrowserRouter } from 'react-router-dom';
 import { DayPage } from '../pages/DayPage';
 import { HomePage } from '../pages/HomePage';
-import { Page5 } from '../pages/Page5';
-import { TestPage } from '../pages/TestPage';
+import { Page10 } from '../pages/Page10';
+import { Page7 } from '../pages/Page7';
+import { Page7bis } from '../pages/Page7bis';
 
 export const router = createBrowserRouter([
     {
@@ -11,19 +11,19 @@ export const router = createBrowserRouter([
         element: <HomePage />
     },
     {
-        path: '/test',
-        element: <TestPage />
+        path: '/day/7/bis',
+        element: <Page7bis />
+    },
+    {
+        path: '/day/7',
+        element: <Page7 />
     },
     {
         path: '/day/:id',
         element: <DayPage />
     },
     {
-        path: '/day/8',
-        element: <div>Test 8</div>
-    },
-    {
-        path: '/day/5',
-        element: <Page5 />
+        path: '/day/10',
+        element: <Page10 />
     }
 ]);

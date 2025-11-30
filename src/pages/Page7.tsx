@@ -1,10 +1,8 @@
 import { useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { answers } from '../answers';
-import { codes } from '../box_codes';
 import './DayPage.css';
 
-export const DayPage = () => {
+export const Page7 = () => {
     const location = useLocation();
     const navigate = useNavigate();
 
@@ -25,8 +23,8 @@ export const DayPage = () => {
         const value = event.target.value;
         setAnswer(value);
         console.log(answer);
-        if (answer.toLowerCase() === answers[`day${dayId}`]) {
-            console.log('Youpi');
+
+        if (answer === 'source' || answer === 'Source') {
             setCondition(true);
         } else {
             setCondition(false);
@@ -34,7 +32,10 @@ export const DayPage = () => {
     };
 
     const handleRetour = () => {
-        navigate(`/`);
+        navigate('/');
+    };
+    const handleSuivant = () => {
+        navigate('/day/7/bis');
     };
 
     console.log(dayId);
@@ -61,7 +62,8 @@ export const DayPage = () => {
                             Vous avez trouvé la bonne réponse
                             <br /> Vous pouvez ouvrir la boite magique :
                         </p>
-                        <p className="box_code">{codes[`day${dayId}`]}</p>
+                        <p className="box_code"> V3G7 </p>
+                        <button onClick={handleSuivant}>Suivant</button>
                     </>
                 ) : firstSubmit ? (
                     <p className="text">Oups, ce n'est pas la bonne réponse!</p>

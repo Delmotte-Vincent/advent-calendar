@@ -18,45 +18,51 @@ export const HomePage = () => {
             <header className="header">
                 <h1>Bienvenue dans la connexion magique de la valise du ministère !</h1>
             </header>
-            <div className="background-section">
-                <div className="button-grid">
-                    <div className="button-row">
-                        {days_row1.map((day) => (
-                            <button
-                                key={day}
-                                className="button-day"
-                                onClick={() => handleClick(day)}
-                            >
-                                Jour {day}
-                            </button>
-                        ))}
-                    </div>
-                    <div className="button-row">
-                        {days_row2.map((day) => (
-                            <button
-                                key={day}
-                                className="button-day"
-                                onClick={() => handleClick(day)}
-                            >
-                                Jour {day}
-                            </button>
-                        ))}
-                    </div>
-                    <div className="button-row">
-                        {days_row3.map((day) => (
-                            <button
-                                key={day}
-                                className="button-day"
-                                onClick={() => handleClick(day)}
-                            >
-                                Jour {day}
-                            </button>
-                        ))}
+            <div className="valise">
+                <div className="background-section">
+                    <div className="button-grid">
+                        <div className="button-row">
+                            {days_row1.map((day) => (
+                                <button
+                                    key={day}
+                                    className="button-day"
+                                    onClick={() => handleClick(day)}
+                                >
+                                    Jour {day}
+                                </button>
+                            ))}
+                        </div>
+                        <div className="button-row">
+                            {days_row2.map((day) => (
+                                <button
+                                    key={day}
+                                    className="button-day"
+                                    onClick={() => handleClick(day)}
+                                >
+                                    Jour {day}
+                                </button>
+                            ))}
+                        </div>
+                        <div className="button-row">
+                            {days_row3.map((day) => (
+                                <button
+                                    key={day}
+                                    className="button-day"
+                                    onClick={() => handleClick(day)}
+                                >
+                                    Jour {day}
+                                </button>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>
             <div style={{ textAlign: 'center' }}>
-                <p>Bas de page</p>
+                <p>
+                    Condition d'utilisation : Toute information, document, graphique ou charme
+                    présenté sur cette connexion magique est la propriété exclusive du Ministère de
+                    la Magie et est protégé par le Code de Confidentialité Magique, Section 712.
+                </p>
             </div>
         </div>
     );

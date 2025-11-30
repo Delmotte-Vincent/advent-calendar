@@ -2,10 +2,16 @@
     background-color: white;
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.valise {
+    width: 100%;
+    overflow-x: scroll;
 }
 
 .background-section {
-    background-image: url('..//assets/Valise.jpeg');
+    background-image: url('../assets/Valise.jpeg');
     background-repeat: no-repeat;
     background-position: center;
     width: 1200px;
@@ -29,6 +35,8 @@
     font-size: 20px;
     font-weight: bold;
     margin: 0 200px;
+    align-items: center;
+    width: 100%;
 }
 
 .button-row {
@@ -73,4 +81,21 @@
     min-width: 100px;
     height: 100px;
     background-color: grey;
+}
+
+@media (max-width: 1250px) {
+    .button-grid {
+        padding-top: 70px;
+    }
+
+    .background-section {
+        width: fit-content;
+        height: 500px;
+    }
+
+    .button-day {
+        width: 50px;
+        height: 50px;
+        font-size: 16px;
+    }
 }
